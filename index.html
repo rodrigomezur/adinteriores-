@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A&D Interiores — Diseño de Interiores de Lujo</title>
+    <meta name="description" content="Estudio de diseño de interiores de lujo en Puerto Vallarta y Guadalajara. Transformamos espacios en experiencias.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header id="header" class="header">
+        <div class="header__container">
+            <a href="#inicio" class="header__logo">A&D <span>Interiores</span></a>
+            <nav class="header__nav" id="nav">
+                <a href="#inicio" class="header__link active">Inicio</a>
+                <a href="#servicios" class="header__link">Servicios</a>
+                <a href="#portafolio" class="header__link">Portafolio</a>
+                <a href="#nosotros" class="header__link">Nosotros</a>
+                <a href="#contacto" class="header__link">Contacto</a>
+            </nav>
+            <button class="header__menu-btn" id="menuBtn" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section id="inicio" class="hero">
+        <div class="hero__bg">
+            <img src="images/hero.png" alt="Interior de lujo diseñado por A&D Interiores" loading="eager">
+            <div class="hero__overlay"></div>
+        </div>
+        <div class="hero__content">
+            <p class="hero__subtitle fade-up">A&D Interiores — Puerto Vallarta & Guadalajara</p>
+            <h1 class="hero__title fade-up">Un espacio te puede cambiar<br>el estado de ánimo</h1>
+            <p class="hero__text fade-up">Transformamos espacios ordinarios en experiencias extraordinarias. Cada proyecto es una historia única de diseño, funcionalidad y elegancia.</p>
+            <a href="#contacto" class="btn btn--primary fade-up">Agenda tu Consulta</a>
+        </div>
+        <div class="hero__scroll">
+            <span>Scroll</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <p class="section-label fade-up">Nuestros Servicios</p>
+            <h2 class="section-title fade-up">Diseño que transforma</h2>
+            <div class="services__grid">
+                <div class="service-card fade-up">
+                    <div class="service-card__icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="service-card__title">Interiorismo Residencial</h3>
+                    <p class="service-card__text">Creamos hogares que reflejan tu personalidad. Desde la conceptualización hasta la entrega final, cada detalle está cuidadosamente pensado para tu estilo de vida.</p>
+                    <a href="#contacto" class="service-card__link">Conoce más <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card fade-up">
+                    <div class="service-card__icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="service-card__title">Interiorismo Comercial</h3>
+                    <p class="service-card__text">Espacios comerciales que impulsan tu marca. Diseñamos restaurantes, hoteles, oficinas y retail con una identidad visual única e impactante.</p>
+                    <a href="#contacto" class="service-card__link">Conoce más <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card fade-up">
+                    <div class="service-card__icon">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <h3 class="service-card__title">Muebles sobre Diseño</h3>
+                    <p class="service-card__text">Piezas únicas hechas a la medida. Colaboramos con artesanos locales para crear mobiliario exclusivo que complementa cada proyecto.</p>
+                    <a href="#contacto" class="service-card__link">Conoce más <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PORTFOLIO ===== -->
+    <section id="portafolio" class="portfolio">
+        <div class="container">
+            <p class="section-label fade-up">Portafolio</p>
+            <h2 class="section-title fade-up">Proyectos seleccionados</h2>
+            <div class="portfolio__grid">
+                <a href="proyectos/departamento-portofino/" class="portfolio__item fade-up">
+                    <img src="images/projects/portofino/hero.png" alt="Departamento Portofino" loading="lazy">
+                    <div class="portfolio__overlay">
+                        <span class="portfolio__category">Residencial</span>
+                        <h3 class="portfolio__name">Departamento Portofino</h3>
+                        <p class="portfolio__location"><i class="fas fa-map-marker-alt"></i> Puerto Vallarta</p>
+                    </div>
+                </a>
+                <a href="proyectos/villa-paradise-coves/" class="portfolio__item fade-up">
+                    <img src="images/projects/paradise-coves/hero.png" alt="Villa Paradise Coves" loading="lazy">
+                    <div class="portfolio__overlay">
+                        <span class="portfolio__category">Residencial</span>
+                        <h3 class="portfolio__name">Villa Paradise Coves</h3>
+                        <p class="portfolio__location"><i class="fas fa-map-marker-alt"></i> Punta Mita</p>
+                    </div>
+                </a>
+                <a href="proyectos/villa-palmas/" class="portfolio__item fade-up">
+                    <img src="images/projects/palmas/hero.png" alt="Villa Palmas" loading="lazy">
+                    <div class="portfolio__overlay">
+                        <span class="portfolio__category">Residencial</span>
+                        <h3 class="portfolio__name">Villa Palmas</h3>
+                        <p class="portfolio__location"><i class="fas fa-map-marker-alt"></i> Punta Mita</p>
+                    </div>
+                </a>
+                <a href="proyectos/casa-1-los-cabos/" class="portfolio__item fade-up">
+                    <img src="images/projects/casa-1/hero.png" alt="Casa 1" loading="lazy">
+                    <div class="portfolio__overlay">
+                        <span class="portfolio__category">Residencial</span>
+                        <h3 class="portfolio__name">Casa 1</h3>
+                        <p class="portfolio__location"><i class="fas fa-map-marker-alt"></i> Puerto Los Cabos</p>
+                    </div>
+                </a>
+                <a href="proyectos/casa-2-los-cabos/" class="portfolio__item fade-up">
+                    <img src="images/projects/casa-2/hero.png" alt="Casa 2" loading="lazy">
+                    <div class="portfolio__overlay">
+                        <span class="portfolio__category">Residencial</span>
+                        <h3 class="portfolio__name">Casa 2</h3>
+                        <p class="portfolio__location"><i class="fas fa-map-marker-alt"></i> Puerto Los Cabos</p>
+                    </div>
+                </a>
+                <a href="proyectos/casa-3-los-cabos/" class="portfolio__item fade-up">
+                    <img src="images/projects/casa-3/hero.png" alt="Casa 3" loading="lazy">
+                    <div class="portfolio__overlay">
+                        <span class="portfolio__category">Residencial</span>
+                        <h3 class="portfolio__name">Casa 3</h3>
+                        <p class="portfolio__location"><i class="fas fa-map-marker-alt"></i> Puerto Los Cabos</p>
+                    </div>
+                </a>
+            </div>
+            <div style="text-align:center; margin-top:48px;">
+                <a href="portafolio/" class="btn btn--primary fade-up">Ver Todos los Proyectos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="nosotros" class="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__image fade-up">
+                    <img src="images/about.png" alt="Estudio A&D Interiores" loading="lazy">
+                    <div class="about__image-accent"></div>
+                </div>
+                <div class="about__content fade-up">
+                    <p class="section-label">Sobre Nosotros</p>
+                    <h2 class="section-title section-title--left">Diseño con alma mexicana</h2>
+                    <p class="about__text">En A&D Interiores creemos que cada espacio cuenta una historia. Con más de una década de experiencia, nuestro estudio ha transformado residencias, restaurantes, hoteles y oficinas en entornos que inspiran y emocionan.</p>
+                    <p class="about__text">Nuestra filosofía fusiona la elegancia contemporánea con la calidez y riqueza de la tradición artesanal mexicana. Trabajamos de la mano con nuestros clientes para crear espacios que reflejan su esencia, mientras colaboramos con los mejores artesanos y proveedores locales.</p>
+                    <div class="about__stats">
+                        <div class="about__stat">
+                            <span class="about__stat-number">150+</span>
+                            <span class="about__stat-label">Proyectos</span>
+                        </div>
+                        <div class="about__stat">
+                            <span class="about__stat-number">12</span>
+                            <span class="about__stat-label">Años</span>
+                        </div>
+                        <div class="about__stat">
+                            <span class="about__stat-number">2</span>
+                            <span class="about__stat-label">Estudios</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials">
+        <div class="container">
+            <p class="section-label fade-up">Testimonios</p>
+            <h2 class="section-title fade-up">Lo que dicen nuestros clientes</h2>
+            <div class="testimonials__grid">
+                <div class="testimonial-card fade-up">
+                    <div class="testimonial-card__stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-card__quote">"A&D transformó nuestra casa en un verdadero santuario. Cada rincón refleja nuestra personalidad y el resultado superó todas nuestras expectativas. Su atención al detalle es incomparable."</p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">MF</div>
+                        <div>
+                            <p class="testimonial-card__name">María Fernanda López</p>
+                            <p class="testimonial-card__role">Casa Amanecer — Puerto Vallarta</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-up">
+                    <div class="testimonial-card__stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-card__quote">"Profesionalismo de primer nivel. El diseño de nuestro restaurante no solo es hermoso, sino que mejoró significativamente la experiencia de nuestros comensales y elevó nuestra marca."</p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">CH</div>
+                        <div>
+                            <p class="testimonial-card__name">Carlos Hernández</p>
+                            <p class="testimonial-card__role">Restaurante Nómada — Guadalajara</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-up">
+                    <div class="testimonial-card__stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-card__quote">"Desde la primera consulta sentí que entendieron exactamente lo que buscaba. El proceso fue transparente, creativo y el resultado final es una obra de arte que disfruto cada día."</p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">AR</div>
+                        <div>
+                            <p class="testimonial-card__name">Andrea Ruiz</p>
+                            <p class="testimonial-card__role">Residencia Serena — Puerto Vallarta</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta__content fade-up">
+                <h2 class="cta__title">¿Listo para transformar tu espacio?</h2>
+                <p class="cta__text">Agenda una consulta gratuita y descubre cómo podemos dar vida a tu visión. Estamos en Puerto Vallarta y Guadalajara para servirte.</p>
+                <div class="cta__locations">
+                    <div class="cta__location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Puerto Vallarta</strong>
+                            <span>Av. Francisco Medina Ascencio 2920, Zona Hotelera</span>
+                        </div>
+                    </div>
+                    <div class="cta__location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Guadalajara</strong>
+                            <span>Av. Américas 1536, Col. Country Club</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="mailto:hola@aydinteriores.mx" class="btn btn--light">Contáctanos Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="contacto" class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="#inicio" class="footer__logo">A&D <span>Interiores</span></a>
+                    <p class="footer__tagline">Diseño de interiores de lujo en Puerto Vallarta y Guadalajara. Transformamos espacios en experiencias.</p>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer__links">
+                    <h4>Navegación</h4>
+                    <a href="#inicio">Inicio</a>
+                    <a href="#servicios">Servicios</a>
+                    <a href="#portafolio">Portafolio</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+                <div class="footer__links">
+                    <h4>Servicios</h4>
+                    <a href="#servicios">Interiorismo Residencial</a>
+                    <a href="#servicios">Interiorismo Comercial</a>
+                    <a href="#servicios">Muebles sobre Diseño</a>
+                </div>
+                <div class="footer__contact">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-envelope"></i> hola@aydinteriores.mx</p>
+                    <p><i class="fas fa-phone"></i> +52 (322) 123 4567</p>
+                    <p><i class="fas fa-phone"></i> +52 (33) 987 6543</p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 A&D Interiores. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
