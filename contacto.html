@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - A&D Interiores</title>
+  <meta name="description" content="Contacta a A&D Interiores. Showrooms en Puerto Vallarta y Guadalajara. Diseño de interiores, muebles sobre diseño y textiles.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      background-color: #f6f4f0;
+      color: #3e3d38;
+      font-family: 'Inter', sans-serif;
+    }
+    .serif { font-family: 'Playfair Display', serif; }
+    .bg-sage { background-color: #7d8271; }
+    .text-sage { color: #7d8271; }
+    .border-sage { border-color: #7d8271; }
+    .logo-text { font-family: 'Playfair Display', serif; letter-spacing: 0.05em; }
+    input, textarea, select {
+      background: transparent;
+      border-bottom: 1px solid #d1d5db;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+    input:focus, textarea:focus, select:focus {
+      border-color: #7d8271;
+    }
+    input::placeholder, textarea::placeholder {
+      color: #9ca3af;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-gray-200">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-40 bg-[#f6f4f0]/90 backdrop-blur-sm px-6 md:px-8 py-6 flex justify-between items-center">
+    <a href="index.html" class="text-[11px] tracking-[0.2em] uppercase font-medium text-gray-500 hover:text-sage transition-colors flex items-center gap-2">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+      Inicio
+    </a>
+    
+    <a href="index.html" class="absolute left-1/2 transform -translate-x-1/2 text-2xl logo-text tracking-widest text-[#3e3d38]">
+      a&d
+    </a>
+    
+    <a href="proyectos.html" class="text-[11px] tracking-[0.2em] uppercase font-medium text-gray-500 hover:text-sage transition-colors">Proyectos</a>
+  </header>
+
+  <!-- Hero -->
+  <section class="pt-32 pb-20 md:pt-40 md:pb-28 px-6">
+    <div class="max-w-[1200px] mx-auto">
+      <h1 class="text-5xl md:text-7xl lg:text-8xl serif text-[#3e3d38] mb-8">Conecta<br>con nosotros</h1>
+      <p class="text-gray-500 max-w-xl text-lg font-light">
+        ¿Tienes un proyecto en mente o alguna pregunta? Nos encantaría escucharte.
+      </p>
+    </div>
+  </section>
+
+  <!-- Offices -->
+  <section class="px-6 pb-24">
+    <div class="max-w-[1200px] mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
+        
+        <!-- Puerto Vallarta -->
+        <div>
+          <h2 class="text-2xl serif text-[#3e3d38] mb-6">Puerto Vallarta</h2>
+          <p class="text-gray-500 mb-2">Plaza Canalan</p>
+          <p class="text-gray-500 mb-6">Puerto Vallarta, Jalisco, México</p>
+          <div class="space-y-2">
+            <a href="tel:+523222903207" class="block text-[#3e3d38] hover:text-sage transition-colors">(322) 290 3207</a>
+            <a href="tel:+523222236209" class="block text-[#3e3d38] hover:text-sage transition-colors">(322) 223 6209</a>
+          </div>
+          <a href="mailto:adinteriores.pv@adinteriores.com.mx" class="block text-sage hover:underline mt-4">adinteriores.pv@adinteriores.com.mx</a>
+        </div>
+
+        <!-- Guadalajara -->
+        <div>
+          <h2 class="text-2xl serif text-[#3e3d38] mb-6">Guadalajara</h2>
+          <p class="text-gray-500 mb-6">Guadalajara, Jalisco, México</p>
+          <div class="space-y-2">
+            <a href="tel:+523336152777" class="block text-[#3e3d38] hover:text-sage transition-colors">(33) 3615 2777</a>
+            <a href="tel:+523336152663" class="block text-[#3e3d38] hover:text-sage transition-colors">(33) 3615 2663</a>
+          </div>
+          <a href="mailto:adinteriores.gdl@adinteriores.com.mx" class="block text-sage hover:underline mt-4">adinteriores.gdl@adinteriores.com.mx</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="nuevo-proyecto" class="bg-white py-24 px-6">
+    <div class="max-w-[900px] mx-auto">
+      <h2 class="text-3xl md:text-4xl serif text-[#3e3d38] mb-4">Nuevo Proyecto</h2>
+      <p class="text-gray-500 mb-12">
+        Envíanos un correo a <a href="mailto:adinteriores.pv@adinteriores.com.mx" class="text-sage hover:underline">adinteriores.pv@adinteriores.com.mx</a> o completa el formulario y nos pondremos en contacto.
+      </p>
+
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-8">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <label class="block text-[10px] tracking-[0.2em] uppercase text-gray-400 mb-2">Nombre *</label>
+            <input type="text" name="name" required class="w-full py-3 text-[#3e3d38]" placeholder="Tu nombre completo">
+          </div>
+          <div>
+            <label class="block text-[10px] tracking-[0.2em] uppercase text-gray-400 mb-2">Email *</label>
+            <input type="email" name="email" required class="w-full py-3 text-[#3e3d38]" placeholder="tu@email.com">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <label class="block text-[10px] tracking-[0.2em] uppercase text-gray-400 mb-2">Teléfono *</label>
+            <input type="tel" name="phone" required class="w-full py-3 text-[#3e3d38]" placeholder="+52 333 123 4567">
+          </div>
+          <div>
+            <label class="block text-[10px] tracking-[0.2em] uppercase text-gray-400 mb-2">Ubicación del proyecto *</label>
+            <input type="text" name="location" required class="w-full py-3 text-[#3e3d38]" placeholder="Ciudad, Estado">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-[10px] tracking-[0.2em] uppercase text-gray-400 mb-2">Tipo de proyecto</label>
+          <select name="project_type" class="w-full py-3 text-[#3e3d38] cursor-pointer">
+            <option value="">Selecciona una opción</option>
+            <option value="residencial">Residencial</option>
+            <option value="comercial">Comercial</option>
+            <option value="hospitalidad">Hospitalidad / Hotelería</option>
+            <option value="muebles">Muebles Sobre Diseño</option>
+            <option value="textiles">Textiles / Blancos</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-[10px] tracking-[0.2em] uppercase text-gray-400 mb-2">Detalles del proyecto *</label>
+          <textarea name="details" required rows="5" class="w-full py-3 text-[#3e3d38] resize-none" placeholder="Cuéntanos sobre tu proyecto, tus ideas, y cómo podemos ayudarte..."></textarea>
+        </div>
+
+        <div>
+          <label class="block text-[10px] tracking-[0.2em] uppercase text-gray-400 mb-2">¿Cómo nos encontraste?</label>
+          <select name="referral" class="w-full py-3 text-[#3e3d38] cursor-pointer">
+            <option value="">Selecciona una opción</option>
+            <option value="google">Google</option>
+            <option value="instagram">Instagram</option>
+            <option value="facebook">Facebook</option>
+            <option value="recomendacion">Recomendación</option>
+            <option value="showroom">Visité el showroom</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+
+        <div class="pt-4">
+          <button type="submit" class="inline-flex items-center justify-center gap-3 bg-sage text-white px-12 py-4 text-[11px] font-medium tracking-[0.2em] uppercase hover:bg-[#6b7163] transition-colors">
+            Enviar mensaje
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- WhatsApp CTA -->
+  <section class="py-20 px-6 border-t border-gray-200">
+    <div class="max-w-[900px] mx-auto text-center">
+      <h3 class="text-2xl serif text-[#3e3d38] mb-4">¿Prefieres WhatsApp?</h3>
+      <p class="text-gray-500 mb-8">Escríbenos directamente y te responderemos lo antes posible.</p>
+      <a href="https://wa.me/523222903207" target="_blank" class="inline-flex items-center justify-center gap-3 border-2 border-sage text-sage px-10 py-4 text-[11px] font-medium tracking-[0.2em] uppercase hover:bg-sage hover:text-white transition-colors">
+        <i class="fab fa-whatsapp text-lg"></i>
+        Enviar WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="relative w-full h-[50vh] flex items-center justify-center text-center text-white">
+    <img src="images/projects/casa-sonrisa/photo_1.jpg" class="absolute inset-0 w-full h-full object-cover z-0 brightness-[0.35]" alt="Comienza tu proyecto">
+    <div class="relative z-10 px-6 w-full max-w-2xl">
+      <h3 class="text-3xl md:text-5xl serif mb-6">Comienza tu Proyecto</h3>
+      <p class="text-lg md:text-xl mb-10 font-light italic opacity-90">"Juntos crearemos algo extraordinario."</p>
+      <a href="proyectos.html" class="inline-flex items-center justify-center gap-3 border border-white/50 px-10 py-4 text-[11px] font-medium tracking-[0.2em] uppercase hover:bg-white hover:text-black transition-colors">
+        Ver Proyectos
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#3e3d38] text-white py-16 px-6">
+    <div class="max-w-[1200px] mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div class="md:col-span-2">
+          <h4 class="text-3xl logo-text mb-6">a&d</h4>
+          <p class="text-white/60 text-sm leading-relaxed max-w-sm">
+            Diseño de interiores que transforma espacios y vidas. Puerto Vallarta y Guadalajara.
+          </p>
+        </div>
+        <div>
+          <h5 class="text-[10px] tracking-[0.2em] uppercase mb-4 text-white/40">Navegación</h5>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li><a href="index.html" class="hover:text-white transition-colors">Inicio</a></li>
+            <li><a href="proyectos.html" class="hover:text-white transition-colors">Proyectos</a></li>
+            <li><a href="contacto.html" class="hover:text-white transition-colors">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="text-[10px] tracking-[0.2em] uppercase mb-4 text-white/40">Síguenos</h5>
+          <div class="flex gap-4">
+            <a href="#" class="text-white/60 hover:text-white transition-colors"><i class="fab fa-instagram text-xl"></i></a>
+            <a href="#" class="text-white/60 hover:text-white transition-colors"><i class="fab fa-facebook-f text-xl"></i></a>
+            <a href="https://wa.me/523222903207" class="text-white/60 hover:text-white transition-colors"><i class="fab fa-whatsapp text-xl"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-white/40">
+        <p>© 2024 A&D Interiores. Todos los derechos reservados.</p>
+        <p>Puerto Vallarta · Guadalajara · Punta Mita</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
