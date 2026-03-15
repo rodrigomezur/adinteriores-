@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A&D Interiores - Diseño de Interiores</title>
-  <meta name="description" content="Estudio de diseño de interiores en Puerto Vallarta y Guadalajara. Interiorismo residencial, comercial y muebles sobre diseño.">
+  <meta name="description" content="Estudio de diseño de interiores en Puerto Vallarta y Guadalajara. Interiorismo residencial, comercial, muebles sobre diseño y textiles.">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,27 +17,12 @@
       font-family: 'Inter', sans-serif;
       overflow-x: hidden;
     }
-    .serif {
-      font-family: 'Playfair Display', serif;
-    }
-    .text-ad-text {
-      color: #3e3d38;
-    }
-    .bg-sage {
-      background-color: #7d8271;
-    }
-    .text-sage {
-      color: #7d8271;
-    }
-    /* Custom cursor styling */
-    #drag-cursor {
-      mix-blend-mode: difference;
-    }
-    /* Logo styling */
-    .logo-text {
-      font-family: 'Playfair Display', serif;
-      letter-spacing: 0.05em;
-    }
+    .serif { font-family: 'Playfair Display', serif; }
+    .text-ad-text { color: #3e3d38; }
+    .bg-sage { background-color: #7d8271; }
+    .text-sage { color: #7d8271; }
+    #drag-cursor { mix-blend-mode: difference; }
+    .logo-text { font-family: 'Playfair Display', serif; letter-spacing: 0.05em; }
   </style>
 </head>
 <body class="antialiased selection:bg-gray-200">
@@ -49,9 +34,9 @@
     <span class="block w-6 h-px bg-current transition-all group-hover:w-8"></span>
   </button>
   
-  <div class="fixed top-8 left-1/2 transform -translate-x-1/2 z-40 text-white mix-blend-difference text-2xl logo-text tracking-widest cursor-pointer select-none">
+  <a href="index.html" class="fixed top-8 left-1/2 transform -translate-x-1/2 z-40 text-white mix-blend-difference text-2xl logo-text tracking-widest cursor-pointer select-none">
     a&d
-  </div>
+  </a>
   
   <a href="#contacto" class="fixed top-8 right-8 z-40 text-white mix-blend-difference text-[11px] tracking-[0.2em] uppercase font-medium hover:underline">Contacto</a>
 
@@ -68,9 +53,9 @@
     <div class="flex-grow flex items-center justify-center w-full px-8">
       <nav class="flex flex-wrap justify-center gap-8 md:gap-16 text-white text-center">
         <a href="proyectos.html" class="text-3xl md:text-5xl lg:text-6xl serif hover:opacity-70 transition-opacity whitespace-nowrap">Proyectos</a>
-        <a href="#proceso" onclick="closeMenu()" class="text-3xl md:text-5xl lg:text-6xl serif hover:opacity-70 transition-opacity whitespace-nowrap">Proceso</a>
-        <a href="#estudio" onclick="closeMenu()" class="text-3xl md:text-5xl lg:text-6xl serif hover:opacity-70 transition-opacity whitespace-nowrap">Estudio</a>
+        <a href="#servicios" onclick="closeMenu()" class="text-3xl md:text-5xl lg:text-6xl serif hover:opacity-70 transition-opacity whitespace-nowrap">Servicios</a>
         <a href="#muebles" onclick="closeMenu()" class="text-3xl md:text-5xl lg:text-6xl serif hover:opacity-70 transition-opacity whitespace-nowrap">Muebles</a>
+        <a href="#marcas" onclick="closeMenu()" class="text-3xl md:text-5xl lg:text-6xl serif hover:opacity-70 transition-opacity whitespace-nowrap">Marcas</a>
         <a href="#contacto" onclick="closeMenu()" class="text-3xl md:text-5xl lg:text-6xl serif hover:opacity-70 transition-opacity whitespace-nowrap">Contacto</a>
       </nav>
     </div>
@@ -80,39 +65,39 @@
   <section id="hero-section" class="relative w-full h-screen overflow-hidden bg-black cursor-none">
     <div id="slider-track" class="flex w-[400vw] h-full transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)]">
       
-      <!-- Slide 1 -->
+      <!-- Slide 1 - Depto Portofino -->
       <div class="w-screen h-full relative flex-shrink-0 select-none">
-        <img src="images/hero.png" class="w-full h-full object-cover opacity-90 pointer-events-none" alt="Diseño de interiores">
+        <img src="images/projects/depto-portofino/photo_1.jpg" class="w-full h-full object-cover opacity-90 pointer-events-none" alt="Diseño de interiores">
         <div class="absolute bottom-16 left-8 md:left-12 text-white pointer-events-none">
           <h2 class="text-5xl md:text-[5rem] serif mb-4 leading-[1.1]">Un espacio<br>te puede cambiar</h2>
-          <a href="proyectos.html" class="text-[11px] tracking-[0.2em] uppercase hover:underline inline-block mt-2">Ver Proyectos</a>
+          <a href="proyectos.html" class="text-[11px] tracking-[0.2em] uppercase hover:underline inline-block mt-2 pointer-events-auto">Ver Proyectos</a>
         </div>
       </div>
       
-      <!-- Slide 2 -->
+      <!-- Slide 2 - Casa Dewi -->
       <div class="w-screen h-full relative flex-shrink-0 select-none">
-        <img src="images/portfolio-1.png" class="w-full h-full object-cover opacity-90 pointer-events-none" alt="Interiorismo residencial">
+        <img src="images/projects/casa-dewi/photo_1.jpg" class="w-full h-full object-cover opacity-90 pointer-events-none" alt="Interiorismo residencial">
         <div class="absolute bottom-16 left-8 md:left-12 text-white pointer-events-none">
-          <h2 class="text-5xl md:text-[5rem] serif mb-4 leading-[1.1]">Interiorismo<br>residencial</h2>
-          <p class="text-[11px] tracking-[0.2em] uppercase pointer-events-auto cursor-pointer hover:underline inline-block mt-2">Explorar</p>
+          <h2 class="text-5xl md:text-[5rem] serif mb-4 leading-[1.1]">Diseño de<br>interiores</h2>
+          <a href="proyectos.html" class="text-[11px] tracking-[0.2em] uppercase hover:underline inline-block mt-2 pointer-events-auto">Explorar</a>
         </div>
       </div>
       
-      <!-- Slide 3 -->
+      <!-- Slide 3 - Tienda GDL -->
       <div class="w-screen h-full relative flex-shrink-0 select-none">
-        <img src="images/portfolio-2.png" class="w-full h-full object-cover opacity-90 pointer-events-none" alt="Diseño comercial">
+        <img src="images/projects/tienda-gdl/photo_1.jpg" class="w-full h-full object-cover opacity-90 pointer-events-none" alt="Diseño comercial">
         <div class="absolute bottom-16 left-8 md:left-12 text-white pointer-events-none">
-          <h2 class="text-5xl md:text-[5rem] serif mb-4 leading-[1.1]">Espacios<br>comerciales</h2>
-          <p class="text-[11px] tracking-[0.2em] uppercase pointer-events-auto cursor-pointer hover:underline inline-block mt-2">Conocer más</p>
+          <h2 class="text-5xl md:text-[5rem] serif mb-4 leading-[1.1]">Transformando<br>espacios</h2>
+          <a href="proyectos.html" class="text-[11px] tracking-[0.2em] uppercase hover:underline inline-block mt-2 pointer-events-auto">Conocer más</a>
         </div>
       </div>
       
-      <!-- Slide 4 -->
+      <!-- Slide 4 - Casa Montecristo -->
       <div class="w-screen h-full relative flex-shrink-0 select-none">
-        <img src="images/portfolio-3.png" class="w-full h-full object-cover opacity-90 pointer-events-none" alt="Muebles sobre diseño">
+        <img src="images/projects/casa-montecristo/photo_1.jpg" class="w-full h-full object-cover opacity-90 pointer-events-none" alt="Muebles sobre diseño">
         <div class="absolute bottom-16 left-8 md:left-12 text-white pointer-events-none">
           <h2 class="text-5xl md:text-[5rem] serif mb-4 leading-[1.1]">Muebles<br>sobre diseño</h2>
-          <p class="text-[11px] tracking-[0.2em] uppercase pointer-events-auto cursor-pointer hover:underline inline-block mt-2">Ver Colección</p>
+          <a href="#muebles" class="text-[11px] tracking-[0.2em] uppercase hover:underline inline-block mt-2 pointer-events-auto">Ver más</a>
         </div>
       </div>
       
@@ -126,151 +111,187 @@
   <!-- Main Content -->
   <main>
     
-    <!-- Intro -->
+    <!-- Intro / Nuestra Empresa -->
     <section class="max-w-[1200px] mx-auto px-6 py-32 md:py-48">
       <h3 class="text-3xl md:text-[2.75rem] serif mb-8 leading-[1.2] max-w-4xl text-ad-text">
-        Un espacio te puede cambiar el estado de ánimo, y como consecuencia la forma en que convives con el mundo.
+        "Un espacio te puede cambiar el estado de ánimo, y como consecuencia la forma en que convives con el mundo."
       </h3>
       <p class="text-gray-500 max-w-[600px] mb-12 text-sm leading-relaxed font-light">
-        En A&D Interiores creamos espacios que inspiran y perduran. Cada proyecto equilibra arte y funcionalidad, diseñando ambientes únicos que reflejan la esencia de quienes los habitan. Desde residencias privadas hasta espacios comerciales, nuestro objetivo es transformar tu visión en realidad.
+        En A&D Interiores creamos espacios que inspiran y perduran. Desde residencias privadas y espacios comerciales hasta muebles sobre diseño y textiles para hotelería. Con showrooms en Puerto Vallarta y Guadalajara, transformamos tu visión en realidad.
       </p>
-      <a href="#estudio" class="text-[10px] font-medium tracking-[0.2em] text-gray-400 uppercase hover:text-ad-text transition-colors">Conoce nuestro estudio</a>
+      <a href="proyectos.html" class="text-[10px] font-medium tracking-[0.2em] text-gray-400 uppercase hover:text-ad-text transition-colors">Ver proyectos</a>
     </section>
 
-    <!-- Proyectos / Portfolio -->
-    <section id="proyectos" class="max-w-[1200px] mx-auto px-6 pb-32 space-y-40">
+    <!-- Servicios -->
+    <section id="servicios" class="max-w-[1200px] mx-auto px-6 pb-32 space-y-40">
       
-      <!-- Residencial -->
+      <!-- Diseño de Interiores -->
       <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
-        <div class="md:col-span-3">
-          <h4 class="text-xl serif text-ad-text mt-1">Residencial</h4>
-        </div>
-        <div class="md:col-span-9 grid grid-cols-2 gap-6 items-start">
-          <div class="space-y-6">
-            <a href="#" class="block">
-              <img src="images/portfolio-1.png" class="w-full aspect-[4/5] object-cover hover:opacity-90 transition-opacity cursor-pointer" alt="Proyecto residencial">
-            </a>
-          </div>
-          <div class="space-y-6 md:-mt-16">
-            <a href="#" class="block">
-              <img src="images/portfolio-2.png" class="w-full aspect-square object-cover hover:opacity-90 transition-opacity cursor-pointer" alt="Proyecto residencial">
-            </a>
-            <a href="#" class="block">
-              <img src="images/portfolio-3.png" class="w-full aspect-[4/3] object-cover hover:opacity-90 transition-opacity cursor-pointer" alt="Proyecto residencial">
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Comercial -->
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
-        <div class="md:col-span-3">
-          <h4 class="text-xl serif text-ad-text mt-1">Comercial</h4>
-        </div>
-        <div class="md:col-span-9 grid grid-cols-2 gap-6 items-start">
-          <div class="space-y-6 md:pt-24">
-            <a href="#" class="block">
-              <img src="images/portfolio-4.png" class="w-full aspect-[4/3] object-cover hover:opacity-90 transition-opacity cursor-pointer" alt="Proyecto comercial">
-            </a>
-            <a href="#" class="block">
-              <img src="images/portfolio-5.png" class="w-full aspect-square object-cover hover:opacity-90 transition-opacity cursor-pointer" alt="Proyecto comercial">
-            </a>
-          </div>
-          <div class="space-y-6">
-            <a href="#" class="block">
-              <img src="images/portfolio-6.png" class="w-full aspect-[3/4] object-cover hover:opacity-90 transition-opacity cursor-pointer" alt="Proyecto comercial">
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Muebles -->
-      <div id="muebles" class="grid grid-cols-1 md:grid-cols-12 gap-12">
-        <div class="md:col-span-3">
-          <h4 class="text-xl serif text-ad-text mt-1">Muebles Sobre Diseño</h4>
-        </div>
-        <div class="md:col-span-9 grid grid-cols-2 gap-6 items-start">
-          <div class="space-y-6">
-            <a href="#" class="block">
-              <img src="images/about.png" class="w-full aspect-square object-cover hover:opacity-90 transition-opacity cursor-pointer" alt="Muebles sobre diseño">
-            </a>
-          </div>
-          <div class="space-y-6 md:-mt-24">
-            <a href="#" class="block">
-              <img src="images/portfolio-1.png" class="w-full aspect-[4/3] object-cover hover:opacity-90 transition-opacity cursor-pointer" alt="Muebles sobre diseño">
-            </a>
-            <a href="#" class="block">
-              <img src="images/portfolio-2.png" class="w-full aspect-[4/5] object-cover hover:opacity-90 transition-opacity cursor-pointer" alt="Muebles sobre diseño">
-            </a>
-          </div>
-        </div>
-      </div>
-      
-    </section>
-
-    <!-- Proceso -->
-    <section id="proceso" class="max-w-[1200px] mx-auto px-6 py-32 border-t border-[#e8e6e0]">
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
-        <div class="md:col-span-5 pr-8">
-          <h3 class="text-3xl md:text-[2.5rem] serif mb-8 text-ad-text leading-[1.2]">
-            Diseño a tu medida, con pasión y dedicación.
-          </h3>
-          <p class="text-gray-500 mb-10 text-sm leading-relaxed font-light">
-            Nuestro proceso comienza escuchándote. Entendemos tus necesidades, tu estilo de vida y tus sueños para crear espacios que funcionen perfectamente y reflejen tu personalidad. Cada detalle importa.
+        <div class="md:col-span-4">
+          <h4 class="text-2xl serif text-ad-text mb-4">Diseño de Interiores</h4>
+          <p class="text-gray-500 text-sm leading-relaxed font-light mb-6">
+            Creamos espacios únicos que reflejan tu personalidad y estilo de vida. Residencias, departamentos y villas con diseño de autor.
           </p>
-          <a href="#contacto" class="text-[10px] font-medium tracking-[0.2em] text-gray-400 uppercase hover:text-ad-text transition-colors">Comenzar un proyecto</a>
+          <a href="proyectos.html" class="text-[10px] font-medium tracking-[0.2em] text-sage uppercase hover:underline">Ver proyectos →</a>
         </div>
-        <div class="md:col-span-7 grid grid-cols-2 gap-6 items-start">
-          <div class="space-y-6 md:pt-16">
-            <img src="images/portfolio-3.png" class="w-full aspect-[4/3] object-cover" alt="Proceso de diseño">
-            <img src="images/portfolio-4.png" class="w-full aspect-[4/5] object-cover" alt="Proceso de diseño">
+        <div class="md:col-span-8 grid grid-cols-2 gap-4 items-start">
+          <a href="proyectos/depto-portofino.html" class="block group">
+            <img src="images/projects/depto-portofino/photo_2.jpg" class="w-full aspect-[4/5] object-cover group-hover:opacity-90 transition-opacity" alt="Depto Portofino">
+            <p class="text-xs text-gray-400 mt-2">Depto Portofino · Puerto Vallarta</p>
+          </a>
+          <div class="space-y-4 md:-mt-16">
+            <a href="proyectos/casa-dewi.html" class="block group">
+              <img src="images/projects/casa-dewi/photo_2.jpg" class="w-full aspect-square object-cover group-hover:opacity-90 transition-opacity" alt="Casa Dewi">
+              <p class="text-xs text-gray-400 mt-2">Casa Dewi</p>
+            </a>
+            <a href="proyectos/los-reyes.html" class="block group">
+              <img src="images/projects/los-reyes/photo_1.jpg" class="w-full aspect-[4/3] object-cover group-hover:opacity-90 transition-opacity" alt="Casa Los Reyes">
+              <p class="text-xs text-gray-400 mt-2">Casa Los Reyes · Michoacán</p>
+            </a>
           </div>
-          <div class="space-y-6">
-            <img src="images/portfolio-5.png" class="w-full aspect-[4/5] object-cover" alt="Proceso de diseño">
-            <img src="images/portfolio-6.png" class="w-full aspect-[4/3] object-cover" alt="Proceso de diseño">
+        </div>
+      </div>
+
+      <!-- Transformando Espacios -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+        <div class="md:col-span-8 grid grid-cols-2 gap-4 items-start md:order-1">
+          <div class="space-y-4 md:pt-24">
+            <a href="proyectos/tienda-gdl.html" class="block group">
+              <img src="images/projects/tienda-gdl/photo_2.jpg" class="w-full aspect-[4/3] object-cover group-hover:opacity-90 transition-opacity" alt="Tienda GDL">
+              <p class="text-xs text-gray-400 mt-2">Tienda Guadalajara</p>
+            </a>
+            <a href="proyectos/xalli-lobby.html" class="block group">
+              <img src="images/projects/xalli-lobby/photo_2.jpg" class="w-full aspect-square object-cover group-hover:opacity-90 transition-opacity" alt="Xalli Lobby">
+              <p class="text-xs text-gray-400 mt-2">Xalli Lobby & Club</p>
+            </a>
+          </div>
+          <a href="proyectos/sierra-del-mar.html" class="block group">
+            <img src="images/projects/sierra-del-mar/photo_1.jpg" class="w-full aspect-[3/4] object-cover group-hover:opacity-90 transition-opacity" alt="Sierra del Mar">
+            <p class="text-xs text-gray-400 mt-2">Sierra del Mar</p>
+          </a>
+        </div>
+        <div class="md:col-span-4 md:order-2">
+          <h4 class="text-2xl serif text-ad-text mb-4">Transformando Espacios</h4>
+          <p class="text-gray-500 text-sm leading-relaxed font-light mb-6">
+            Espacios comerciales y de hospitalidad diseñados para impactar. Hoteles, restaurantes, lobbies y showrooms con identidad única.
+          </p>
+          <a href="proyectos.html" class="text-[10px] font-medium tracking-[0.2em] text-sage uppercase hover:underline">Explorar →</a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Muebles Sobre Diseño -->
+    <section id="muebles" class="bg-white py-32">
+      <div class="max-w-[1200px] mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+          <div class="md:col-span-5 pr-8">
+            <h3 class="text-3xl md:text-[2.5rem] serif mb-8 text-ad-text leading-[1.2]">
+              Diseñando Muebles
+            </h3>
+            <p class="text-gray-500 mb-6 text-sm leading-relaxed font-light">
+              Muebles sobre diseño fabricados con los más altos estándares de calidad. Cada pieza es única, creada específicamente para tu espacio.
+            </p>
+            <p class="text-gray-500 mb-10 text-sm leading-relaxed font-light">
+              Nuestro proceso de diseño y fabricación garantiza piezas exclusivas que complementan perfectamente tu proyecto de interiores.
+            </p>
+            <a href="#contacto" class="text-[10px] font-medium tracking-[0.2em] text-sage uppercase hover:underline">Solicitar cotización →</a>
+          </div>
+          <div class="md:col-span-7 grid grid-cols-2 gap-4 items-start">
+            <div class="space-y-4 md:pt-16">
+              <img src="images/projects/casa-altillo/photo_2.jpg" class="w-full aspect-[4/3] object-cover" alt="Muebles sobre diseño">
+              <img src="images/projects/lareau/photo_2.jpg" class="w-full aspect-[4/5] object-cover" alt="Muebles sobre diseño">
+            </div>
+            <div class="space-y-4">
+              <img src="images/projects/palmas-19/photo_1.jpg" class="w-full aspect-[4/5] object-cover" alt="Muebles sobre diseño">
+              <img src="images/projects/casa-nuevo-vallarta/photo_2.jpg" class="w-full aspect-[4/3] object-cover" alt="Muebles sobre diseño">
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Estudio -->
-    <section id="estudio" class="max-w-[1200px] mx-auto px-6 py-32">
-      <h3 class="text-[2.5rem] serif mb-20 text-center text-sage">Nuestro Equipo</h3>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-16">
-        
-        <!-- Team Member 1 -->
-        <div class="group cursor-pointer">
-          <div class="overflow-hidden mb-6">
-            <img src="images/about.png" class="w-full aspect-[3/4] object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105" alt="Equipo A&D">
-          </div>
-          <h5 class="text-sm text-ad-text mb-1">Director Creativo</h5>
-          <p class="text-xs text-gray-400">Fundador</p>
+    <!-- Textiles y Blancos -->
+    <section class="max-w-[1200px] mx-auto px-6 py-32 border-b border-[#e8e6e0]">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+        <div>
+          <h4 class="text-2xl serif text-ad-text mb-4">Los Textiles en Nuestros Proyectos</h4>
+          <p class="text-gray-500 text-sm leading-relaxed font-light mb-6">
+            Seleccionamos cuidadosamente cada textil para complementar nuestros diseños. Telas, tapices y cortinas de las mejores marcas internacionales.
+          </p>
+          <img src="images/projects/rincon-de-almas/photo_1.jpg" class="w-full aspect-[3/2] object-cover" alt="Textiles">
         </div>
-        
-        <!-- Team Member 2 -->
-        <div class="group cursor-pointer">
-          <div class="overflow-hidden mb-6">
-            <img src="images/portfolio-1.png" class="w-full aspect-[3/4] object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105" alt="Equipo A&D">
-          </div>
-          <h5 class="text-sm text-ad-text mb-1">Diseñadora Senior</h5>
-          <p class="text-xs text-gray-400">Interiorismo</p>
+        <div>
+          <h4 class="text-2xl serif text-ad-text mb-4">Blancos Esenciales para Hotelería</h4>
+          <p class="text-gray-500 text-sm leading-relaxed font-light mb-6">
+            Línea especializada de blancos para proyectos de hospitalidad. Sábanas, toallas y amenidades de la más alta calidad.
+          </p>
+          <img src="images/projects/paseo-de-la-noria/photo_1.jpg" class="w-full aspect-[3/2] object-cover" alt="Blancos hotelería">
         </div>
-        
-        <!-- Team Member 3 -->
-        <div class="group cursor-pointer">
-          <div class="overflow-hidden mb-6">
-            <img src="images/portfolio-2.png" class="w-full aspect-[3/4] object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105" alt="Equipo A&D">
-          </div>
-          <h5 class="text-sm text-ad-text mb-1">Arquitecto</h5>
-          <p class="text-xs text-gray-400">Proyectos</p>
+      </div>
+    </section>
+
+    <!-- Marcas que Representamos -->
+    <section id="marcas" class="max-w-[1200px] mx-auto px-6 py-32">
+      <h3 class="text-[2.5rem] serif mb-8 text-center text-ad-text">Marcas que Representamos</h3>
+      <p class="text-gray-500 text-center max-w-2xl mx-auto mb-16 text-sm leading-relaxed font-light">
+        Trabajamos con las mejores marcas internacionales de mobiliario, textiles y accesorios para garantizar la más alta calidad en cada proyecto.
+      </p>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+        <div class="flex items-center justify-center h-24 border border-gray-200 text-gray-400 text-sm tracking-wider hover:border-sage hover:text-sage transition-colors cursor-pointer">
+          MARCA 1
         </div>
-        
+        <div class="flex items-center justify-center h-24 border border-gray-200 text-gray-400 text-sm tracking-wider hover:border-sage hover:text-sage transition-colors cursor-pointer">
+          MARCA 2
+        </div>
+        <div class="flex items-center justify-center h-24 border border-gray-200 text-gray-400 text-sm tracking-wider hover:border-sage hover:text-sage transition-colors cursor-pointer">
+          MARCA 3
+        </div>
+        <div class="flex items-center justify-center h-24 border border-gray-200 text-gray-400 text-sm tracking-wider hover:border-sage hover:text-sage transition-colors cursor-pointer">
+          MARCA 4
+        </div>
+        <div class="flex items-center justify-center h-24 border border-gray-200 text-gray-400 text-sm tracking-wider hover:border-sage hover:text-sage transition-colors cursor-pointer">
+          MARCA 5
+        </div>
+        <div class="flex items-center justify-center h-24 border border-gray-200 text-gray-400 text-sm tracking-wider hover:border-sage hover:text-sage transition-colors cursor-pointer">
+          MARCA 6
+        </div>
+        <div class="flex items-center justify-center h-24 border border-gray-200 text-gray-400 text-sm tracking-wider hover:border-sage hover:text-sage transition-colors cursor-pointer">
+          MARCA 7
+        </div>
+        <div class="flex items-center justify-center h-24 border border-gray-200 text-gray-400 text-sm tracking-wider hover:border-sage hover:text-sage transition-colors cursor-pointer">
+          MARCA 8
+        </div>
+      </div>
+    </section>
+
+    <!-- Showrooms -->
+    <section class="bg-sage text-white py-24">
+      <div class="max-w-[1200px] mx-auto px-6">
+        <h3 class="text-3xl md:text-[2.5rem] serif mb-12 text-center">Showrooms y Estudio de Diseño</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-center">
+          <div>
+            <h4 class="text-xl serif mb-4">Puerto Vallarta</h4>
+            <p class="text-white/70 text-sm mb-2">Plaza Canalan</p>
+            <p class="text-white/70 text-sm mb-4">Puerto Vallarta, Jalisco</p>
+            <p class="text-sm">Tel. (322) 290 3207</p>
+            <p class="text-sm">Tel. (322) 223 6209</p>
+            <a href="mailto:adinteriores.pv@adinteriores.com.mx" class="text-sm hover:underline block mt-2">adinteriores.pv@adinteriores.com.mx</a>
+          </div>
+          <div>
+            <h4 class="text-xl serif mb-4">Guadalajara</h4>
+            <p class="text-white/70 text-sm mb-4">Guadalajara, Jalisco</p>
+            <p class="text-sm">Tel. (33) 3615 2777</p>
+            <p class="text-sm">Tel. (33) 3615 2663</p>
+            <a href="mailto:adinteriores.gdl@adinteriores.com.mx" class="text-sm hover:underline block mt-2">adinteriores.gdl@adinteriores.com.mx</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Contact CTA -->
     <section id="contacto" class="relative w-full h-[65vh] flex items-center justify-center text-center text-white">
-      <img src="images/hero.png" class="absolute inset-0 w-full h-full object-cover z-0 brightness-[0.4]" alt="Contacto">
+      <img src="images/projects/casa-willbanks/photo_1.jpg" class="absolute inset-0 w-full h-full object-cover z-0 brightness-[0.4]" alt="Contacto">
       <div class="relative z-10 px-6 w-full max-w-2xl">
         <h3 class="text-4xl md:text-[3.5rem] serif mb-6">Comienza tu Proyecto</h3>
         <p class="text-xl md:text-2xl mb-12 font-light italic">"Juntos crearemos algo extraordinario."</p>
@@ -298,49 +319,33 @@
       <div class="lg:col-span-8 grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-4 text-[11px] text-gray-500">
         <div>
           <h6 class="font-semibold text-ad-text tracking-[0.15em] uppercase mb-6">Puerto Vallarta</h6>
-          <p class="leading-[1.8]">Plaza Canalan<br>Puerto Vallarta, Jalisco<br>México</p>
+          <p class="leading-[1.8]">Plaza Canalan<br>Tel. (322) 290 3207<br>Tel. (322) 223 6209</p>
         </div>
         <div>
           <h6 class="font-semibold text-ad-text tracking-[0.15em] uppercase mb-6">Guadalajara</h6>
-          <p class="leading-[1.8]">Tel. (33) 3615 2777<br>Guadalajara, Jalisco<br>México</p>
+          <p class="leading-[1.8]">Tel. (33) 3615 2777<br>Tel. (33) 3615 2663</p>
         </div>
         <div>
           <h6 class="font-semibold text-ad-text tracking-[0.15em] uppercase mb-6">Servicios</h6>
-          <p class="leading-[1.8]">Interiorismo Residencial<br>Diseño Comercial<br>Muebles Sobre Diseño<br>Consultoría</p>
+          <p class="leading-[1.8]">Diseño de Interiores<br>Muebles Sobre Diseño<br>Textiles y Blancos<br>Consultoría</p>
         </div>
       </div>
       
     </div>
     
-    <div class="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start mb-24">
-      <div class="lg:col-span-4">
-        <div class="lg:hidden mb-12">
-          <p class="text-[10px] text-gray-400 mb-1">&copy; 2024 A&D Interiores</p>
-          <p class="text-[10px] text-gray-400">Puerto Vallarta & Guadalajara</p>
-        </div>
+    <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-12 mb-24">
+      <div class="lg:hidden">
+        <p class="text-[10px] text-gray-400 mb-1">&copy; 2024 A&D Interiores</p>
+        <p class="text-[10px] text-gray-400">Puerto Vallarta & Guadalajara</p>
       </div>
       
-      <div class="lg:col-span-8 flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
-        <div class="flex-grow w-full md:w-auto md:max-w-sm">
-          <h6 class="text-[11px] font-semibold text-ad-text tracking-[0.15em] uppercase mb-6">Newsletter</h6>
-          <div class="border-b border-gray-300 flex items-center pb-3 transition-colors focus-within:border-ad-text">
-            <input type="email" placeholder="Tu correo electrónico" class="w-full bg-transparent text-sm outline-none placeholder-gray-400 text-ad-text">
-            <button class="ml-4 text-gray-400 hover:text-ad-text transition-colors">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-            </button>
-          </div>
-        </div>
-        
-        <div class="flex flex-col text-[11px] text-gray-500">
-          <h6 class="font-semibold text-ad-text tracking-[0.15em] uppercase mb-6 hidden md:block opacity-0">Connect</h6>
-          <a href="mailto:adinteriores.pv@adinteriores.com.mx" class="mb-2 hover:text-gray-800 transition-colors">adinteriores.pv@adinteriores.com.mx</a>
-          <a href="tel:+523331234567" class="mb-6 hover:text-gray-800 transition-colors">+52 (322) 290 3207</a>
-          <div class="flex space-x-5 text-gray-400">
-            <a href="#" class="hover:text-ad-text transition-colors"><i class="fab fa-instagram text-base"></i></a>
-            <a href="#" class="hover:text-ad-text transition-colors"><i class="fab fa-facebook-f text-base"></i></a>
-            <a href="#" class="hover:text-ad-text transition-colors"><i class="fab fa-pinterest-p text-base"></i></a>
-            <a href="#" class="hover:text-ad-text transition-colors"><i class="fab fa-whatsapp text-base"></i></a>
-          </div>
+      <div class="flex flex-col text-[11px] text-gray-500 md:ml-auto">
+        <a href="mailto:adinteriores.pv@adinteriores.com.mx" class="mb-2 hover:text-gray-800 transition-colors">adinteriores.pv@adinteriores.com.mx</a>
+        <a href="mailto:adinteriores.gdl@adinteriores.com.mx" class="mb-6 hover:text-gray-800 transition-colors">adinteriores.gdl@adinteriores.com.mx</a>
+        <div class="flex space-x-5 text-gray-400">
+          <a href="#" class="hover:text-ad-text transition-colors"><i class="fab fa-instagram text-base"></i></a>
+          <a href="#" class="hover:text-ad-text transition-colors"><i class="fab fa-facebook-f text-base"></i></a>
+          <a href="#" class="hover:text-ad-text transition-colors"><i class="fab fa-whatsapp text-base"></i></a>
         </div>
       </div>
     </div>
@@ -420,12 +425,8 @@
       cancelAnimationFrame(animationID);
       const movedBy = currentTranslate - prevTranslate;
       
-      if (movedBy < -100 && currentIndex < slidesCount - 1) {
-        currentIndex += 1;
-      }
-      if (movedBy > 100 && currentIndex > 0) {
-        currentIndex -= 1;
-      }
+      if (movedBy < -100 && currentIndex < slidesCount - 1) currentIndex += 1;
+      if (movedBy > 100 && currentIndex > 0) currentIndex -= 1;
       
       setPositionByIndex();
       sliderTrack.style.transition = 'transform 700ms cubic-bezier(0.25, 1, 0.5, 1)';
@@ -447,9 +448,7 @@
       sliderTrack.style.transform = `translateX(${currentTranslate}px)`;
     }
 
-    window.addEventListener('resize', () => {
-      setPositionByIndex();
-    });
+    window.addEventListener('resize', setPositionByIndex);
 
     // Menu Toggle
     const menuBtn = document.getElementById('menu-btn');
@@ -468,16 +467,14 @@
       document.body.style.overflow = '';
     }
     
-    // Smooth scroll for anchor links
+    // Smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         const href = this.getAttribute('href');
         if (href !== '#') {
           e.preventDefault();
           const target = document.querySelector(href);
-          if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
-          }
+          if (target) target.scrollIntoView({ behavior: 'smooth' });
         }
       });
     });
