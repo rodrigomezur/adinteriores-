@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diseño y Fabricación de Muebles - A&D Interiores</title>
+  <meta name="description" content="Muebles sobre diseño fabricados con los más altos estándares de calidad. Diseño personalizado, carpintería artesanal y acabados de lujo.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      background-color: #f6f4f0;
+      color: #3e3d38;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+    .serif { font-family: 'Playfair Display', serif; }
+    .text-ad-text { color: #3e3d38; }
+    .bg-sage { background-color: #7d8271; }
+    .text-sage { color: #7d8271; }
+  </style>
+</head>
+<body class="antialiased selection:bg-gray-200">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-40 px-6 md:px-8 py-4 flex justify-between items-center bg-[#f6f4f0]/90 backdrop-blur-sm">
+    <button id="menu-btn" class="text-ad-text flex flex-col justify-center items-start w-8 h-8 cursor-pointer group hover:opacity-70 transition-opacity">
+      <span class="block w-6 h-px bg-current mb-1.5 transition-all group-hover:w-8"></span>
+      <span class="block w-6 h-px bg-current mb-1.5 transition-all group-hover:w-8"></span>
+      <span class="block w-6 h-px bg-current transition-all group-hover:w-8"></span>
+    </button>
+    
+    <a href="index.html" class="absolute left-1/2 transform -translate-x-1/2 cursor-pointer select-none">
+      <img src="images/logo.png" alt="A&D Interiores" class="h-12 md:h-16">
+    </a>
+    
+    <a href="contacto.html" class="text-ad-text text-[11px] tracking-[0.2em] uppercase font-medium hover:underline">Contacto</a>
+  </header>
+
+  <!-- Menu Overlay -->
+  <div id="full-menu" class="fixed inset-0 bg-sage z-50 transform -translate-y-full transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] flex flex-col overflow-hidden">
+    <header class="relative w-full flex justify-between items-center p-8 text-white flex-shrink-0">
+      <button id="close-btn" class="flex flex-col justify-center items-center w-8 h-8 cursor-pointer hover:opacity-70 transition-opacity">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+      <img src="images/logo.png" alt="A&D Interiores" class="absolute left-1/2 transform -translate-x-1/2 h-20 brightness-0 invert">
+      <a href="contacto.html" class="text-[11px] tracking-[0.2em] uppercase font-medium hover:underline">Contacto</a>
+    </header>
+    
+    <div class="flex-grow flex items-center justify-center w-full px-8">
+      <nav class="flex flex-wrap justify-center gap-8 md:gap-16 text-white text-center">
+        <a href="proyectos.html" class="text-3xl md:text-5xl lg:text-6xl serif hover:opacity-70 transition-opacity whitespace-nowrap">Proyectos</a>
+        <a href="index.html#servicios" class="text-3xl md:text-5xl lg:text-6xl serif hover:opacity-70 transition-opacity whitespace-nowrap">Servicios</a>
+        <a href="muebles.html" class="text-3xl md:text-5xl lg:text-6xl serif hover:opacity-70 transition-opacity whitespace-nowrap">Muebles</a>
+        <a href="textiles.html" class="text-3xl md:text-5xl lg:text-6xl serif hover:opacity-70 transition-opacity whitespace-nowrap">Textiles</a>
+        <a href="contacto.html" class="text-3xl md:text-5xl lg:text-6xl serif hover:opacity-70 transition-opacity whitespace-nowrap">Contacto</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="relative w-full h-[70vh] flex items-end">
+    <img src="images/projects/casa-montecristo/photo_1.jpg" class="absolute inset-0 w-full h-full object-cover" alt="Muebles sobre diseño">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+    <div class="relative z-10 max-w-[1200px] mx-auto w-full px-6 pb-16">
+      <p class="text-white/70 text-[10px] tracking-[0.25em] uppercase mb-4">A&D Interiores</p>
+      <h1 class="text-4xl md:text-6xl lg:text-7xl serif text-white leading-[1.1]">Diseño y Fabricación<br>de Muebles</h1>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main>
+    
+    <!-- Intro -->
+    <section class="max-w-[1200px] mx-auto px-6 py-32">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
+        <div class="md:col-span-5">
+          <h2 class="text-3xl md:text-[2.5rem] serif text-ad-text leading-[1.2] mb-8">Piezas únicas para espacios únicos</h2>
+          <p class="text-gray-500 text-sm leading-relaxed font-light mb-6">
+            Cada mueble que diseñamos nace de una visión: crear piezas que no solo cumplan una función, sino que cuenten una historia y transformen el espacio que habitan.
+          </p>
+          <p class="text-gray-500 text-sm leading-relaxed font-light">
+            Nuestro proceso combina diseño contemporáneo con técnicas artesanales tradicionales, utilizando los mejores materiales para garantizar belleza y durabilidad.
+          </p>
+        </div>
+        <div class="md:col-span-7 grid grid-cols-2 gap-4">
+          <img src="images/projects/lareau/photo_2.jpg" class="w-full aspect-[3/4] object-cover" alt="Muebles de diseño">
+          <img src="images/projects/casa-altillo/photo_2.jpg" class="w-full aspect-[3/4] object-cover mt-12" alt="Carpintería artesanal">
+        </div>
+      </div>
+    </section>
+
+    <!-- Proceso -->
+    <section class="bg-white py-32">
+      <div class="max-w-[1200px] mx-auto px-6">
+        <div class="text-center mb-20">
+          <p class="text-[10px] font-medium tracking-[0.25em] text-gray-400 uppercase mb-4">Cómo Trabajamos</p>
+          <h2 class="text-3xl md:text-[2.5rem] serif text-ad-text">Proceso de Diseño y Fabricación</h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center border border-sage rounded-full">
+              <span class="text-2xl serif text-sage">01</span>
+            </div>
+            <h3 class="text-lg serif text-ad-text mb-3">Consulta Inicial</h3>
+            <p class="text-gray-500 text-sm leading-relaxed font-light">
+              Escuchamos tu visión, analizamos el espacio y entendemos tus necesidades funcionales y estéticas.
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center border border-sage rounded-full">
+              <span class="text-2xl serif text-sage">02</span>
+            </div>
+            <h3 class="text-lg serif text-ad-text mb-3">Diseño</h3>
+            <p class="text-gray-500 text-sm leading-relaxed font-light">
+              Creamos propuestas detalladas con renders, planos técnicos y selección de materiales y acabados.
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center border border-sage rounded-full">
+              <span class="text-2xl serif text-sage">03</span>
+            </div>
+            <h3 class="text-lg serif text-ad-text mb-3">Fabricación</h3>
+            <p class="text-gray-500 text-sm leading-relaxed font-light">
+              Artesanos expertos dan vida al diseño en nuestro taller, con atención meticulosa a cada detalle.
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center border border-sage rounded-full">
+              <span class="text-2xl serif text-sage">04</span>
+            </div>
+            <h3 class="text-lg serif text-ad-text mb-3">Instalación</h3>
+            <p class="text-gray-500 text-sm leading-relaxed font-light">
+              Entregamos e instalamos cada pieza, asegurando que se integre perfectamente en tu espacio.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tipos de Muebles -->
+    <section class="max-w-[1200px] mx-auto px-6 py-32">
+      <div class="text-center mb-20">
+        <p class="text-[10px] font-medium tracking-[0.25em] text-gray-400 uppercase mb-4">Lo Que Creamos</p>
+        <h2 class="text-3xl md:text-[2.5rem] serif text-ad-text">Categorías de Muebles</h2>
+      </div>
+      
+      <div class="space-y-24">
+        <!-- Salas y Estar -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+          <div class="md:col-span-7">
+            <img src="images/projects/depto-portofino/photo_2.jpg" class="w-full aspect-[4/3] object-cover" alt="Muebles de sala">
+          </div>
+          <div class="md:col-span-5">
+            <h3 class="text-2xl serif text-ad-text mb-4">Salas y Estar</h3>
+            <p class="text-gray-500 text-sm leading-relaxed font-light mb-6">
+              Sofás, sillones, mesas de centro y auxiliares diseñados para crear ambientes de confort y elegancia. Cada pieza se adapta a las dimensiones y estilo de tu espacio.
+            </p>
+            <ul class="text-gray-500 text-sm font-light space-y-2">
+              <li>• Sofás modulares y seccionales</li>
+              <li>• Sillones de lectura</li>
+              <li>• Mesas de centro y laterales</li>
+              <li>• Consolas y aparadores</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Comedores -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+          <div class="md:col-span-5 order-2 md:order-1">
+            <h3 class="text-2xl serif text-ad-text mb-4">Comedores</h3>
+            <p class="text-gray-500 text-sm leading-relaxed font-light mb-6">
+              Mesas de comedor en maderas nobles, sillas tapizadas y gabinetes que transforman el acto de comer en una experiencia memorable.
+            </p>
+            <ul class="text-gray-500 text-sm font-light space-y-2">
+              <li>• Mesas de comedor a medida</li>
+              <li>• Sillas y bancos tapizados</li>
+              <li>• Vitrinas y bufeteros</li>
+              <li>• Barras y islas de cocina</li>
+            </ul>
+          </div>
+          <div class="md:col-span-7 order-1 md:order-2">
+            <img src="images/projects/casa-dewi/photo_2.jpg" class="w-full aspect-[4/3] object-cover" alt="Comedores">
+          </div>
+        </div>
+
+        <!-- Recámaras -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+          <div class="md:col-span-7">
+            <img src="images/projects/casa-nuevo-vallarta/photo_2.jpg" class="w-full aspect-[4/3] object-cover" alt="Muebles de recámara">
+          </div>
+          <div class="md:col-span-5">
+            <h3 class="text-2xl serif text-ad-text mb-4">Recámaras</h3>
+            <p class="text-gray-500 text-sm leading-relaxed font-light mb-6">
+              Cabeceras, bases de cama, burós y cómodas que convierten tu habitación en un santuario de descanso y estilo.
+            </p>
+            <ul class="text-gray-500 text-sm font-light space-y-2">
+              <li>• Cabeceras tapizadas y de madera</li>
+              <li>• Bases de cama</li>
+              <li>• Burós y cómodas</li>
+              <li>• Tocadores y espejos</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Exterior -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+          <div class="md:col-span-5 order-2 md:order-1">
+            <h3 class="text-2xl serif text-ad-text mb-4">Exterior y Terraza</h3>
+            <p class="text-gray-500 text-sm leading-relaxed font-light mb-6">
+              Muebles diseñados para resistir el clima mientras mantienen la elegancia. Perfectos para terrazas, jardines y áreas de alberca.
+            </p>
+            <ul class="text-gray-500 text-sm font-light space-y-2">
+              <li>• Salas de exterior</li>
+              <li>• Comedores de terraza</li>
+              <li>• Camastros y daybeds</li>
+              <li>• Mesas de jardín</li>
+            </ul>
+          </div>
+          <div class="md:col-span-7 order-1 md:order-2">
+            <img src="images/projects/sierra-del-mar/photo_1.jpg" class="w-full aspect-[4/3] object-cover" alt="Muebles de exterior">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Materiales -->
+    <section class="bg-sage text-white py-32">
+      <div class="max-w-[1200px] mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+          <div class="md:col-span-5">
+            <p class="text-[10px] font-medium tracking-[0.25em] text-white/60 uppercase mb-4">Calidad Superior</p>
+            <h2 class="text-3xl md:text-[2.5rem] serif leading-[1.2] mb-8">Materiales y Acabados</h2>
+            <p class="text-white/80 text-sm leading-relaxed font-light mb-6">
+              Seleccionamos únicamente los mejores materiales: maderas nobles como parota, tzalam y nogal; herrajes de alta calidad; y acabados que resisten el paso del tiempo.
+            </p>
+            <div class="space-y-4">
+              <div>
+                <h4 class="text-lg serif mb-2">Maderas</h4>
+                <p class="text-white/60 text-sm font-light">Parota, Tzalam, Nogal, Encino, Fresno</p>
+              </div>
+              <div>
+                <h4 class="text-lg serif mb-2">Acabados</h4>
+                <p class="text-white/60 text-sm font-light">Lacas mate, Barnices naturales, Aceites, Patinas</p>
+              </div>
+              <div>
+                <h4 class="text-lg serif mb-2">Complementos</h4>
+                <p class="text-white/60 text-sm font-light">Mármol, Latón, Acero inoxidable, Vidrio</p>
+              </div>
+            </div>
+          </div>
+          <div class="md:col-span-7 grid grid-cols-2 gap-4">
+            <img src="images/projects/palmas-19/photo_1.jpg" class="w-full aspect-square object-cover" alt="Materiales">
+            <img src="images/projects/casa-sonrisa/photo_2.jpg" class="w-full aspect-square object-cover mt-8" alt="Acabados">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos Destacados -->
+    <section class="max-w-[1200px] mx-auto px-6 py-32">
+      <div class="text-center mb-16">
+        <p class="text-[10px] font-medium tracking-[0.25em] text-gray-400 uppercase mb-4">Nuestro Trabajo</p>
+        <h2 class="text-3xl md:text-[2.5rem] serif text-ad-text">Proyectos con Muebles sobre Diseño</h2>
+      </div>
+      
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <a href="proyectos/casa-altillo.html" class="group">
+          <img src="images/projects/casa-altillo/photo_1.jpg" class="w-full aspect-square object-cover group-hover:opacity-90 transition-opacity" alt="Casa Altillo">
+          <p class="text-xs text-gray-400 mt-2">Casa Altillo</p>
+        </a>
+        <a href="proyectos/lareau.html" class="group">
+          <img src="images/projects/lareau/photo_1.jpg" class="w-full aspect-square object-cover group-hover:opacity-90 transition-opacity" alt="Lareau">
+          <p class="text-xs text-gray-400 mt-2">Lareau</p>
+        </a>
+        <a href="proyectos/palmas-19.html" class="group">
+          <img src="images/projects/palmas-19/photo_2.jpg" class="w-full aspect-square object-cover group-hover:opacity-90 transition-opacity" alt="Palmas 19">
+          <p class="text-xs text-gray-400 mt-2">Palmas 19</p>
+        </a>
+        <a href="proyectos/casa-montecristo.html" class="group">
+          <img src="images/projects/casa-montecristo/photo_2.jpg" class="w-full aspect-square object-cover group-hover:opacity-90 transition-opacity" alt="Casa Montecristo">
+          <p class="text-xs text-gray-400 mt-2">Casa Montecristo</p>
+        </a>
+        <a href="proyectos/depto-portofino.html" class="group">
+          <img src="images/projects/depto-portofino/photo_1.jpg" class="w-full aspect-square object-cover group-hover:opacity-90 transition-opacity" alt="Depto Portofino">
+          <p class="text-xs text-gray-400 mt-2">Depto Portofino</p>
+        </a>
+        <a href="proyectos/casa-nuevo-vallarta.html" class="group">
+          <img src="images/projects/casa-nuevo-vallarta/photo_1.jpg" class="w-full aspect-square object-cover group-hover:opacity-90 transition-opacity" alt="Casa Nuevo Vallarta">
+          <p class="text-xs text-gray-400 mt-2">Casa Nuevo Vallarta</p>
+        </a>
+      </div>
+      
+      <div class="text-center mt-12">
+        <a href="proyectos.html" class="text-[10px] font-medium tracking-[0.2em] text-sage uppercase hover:underline">Ver todos los proyectos →</a>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="relative w-full h-[60vh] flex items-center justify-center text-center text-white">
+      <img src="images/projects/xalli-lobby/photo_1.jpg" class="absolute inset-0 w-full h-full object-cover brightness-[0.4]" alt="Contacto">
+      <div class="relative z-10 px-6 w-full max-w-2xl">
+        <h2 class="text-3xl md:text-[3rem] serif mb-6">¿Listo para crear algo único?</h2>
+        <p class="text-xl font-light mb-10 text-white/80">
+          Cuéntanos tu idea y diseñamos juntos el mueble perfecto para tu espacio.
+        </p>
+        <a href="https://wa.me/523222903207" target="_blank" class="inline-flex items-center justify-center gap-3 border border-white/50 px-10 py-4 text-[11px] font-medium tracking-[0.2em] uppercase hover:bg-white hover:text-black transition-colors">
+          Solicitar Cotización
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        </a>
+      </div>
+    </section>
+    
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white pt-24 pb-12 px-6">
+    <div class="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 mb-24">
+      
+      <div class="lg:col-span-4 flex flex-col justify-between">
+        <h3 class="text-3xl md:text-[2.5rem] leading-[1.1] serif text-ad-text mb-12 lg:mb-0 pr-8">Muebles que cuentan historias.</h3>
+        <div class="hidden lg:block">
+          <p class="text-[10px] text-gray-400 mb-1">&copy; 2024 A&D Interiores</p>
+          <p class="text-[10px] text-gray-400">Puerto Vallarta & Guadalajara</p>
+        </div>
+      </div>
+      
+      <div class="lg:col-span-8 grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-4 text-[11px] text-gray-500">
+        <div>
+          <h6 class="font-semibold text-ad-text tracking-[0.15em] uppercase mb-6">Puerto Vallarta</h6>
+          <p class="leading-[1.8]">Plaza Canalan<br>Tel. (322) 290 3207<br>Tel. (322) 223 6209</p>
+        </div>
+        <div>
+          <h6 class="font-semibold text-ad-text tracking-[0.15em] uppercase mb-6">Guadalajara</h6>
+          <p class="leading-[1.8]">Tel. (33) 3615 2777<br>Tel. (33) 3615 2663</p>
+        </div>
+        <div>
+          <h6 class="font-semibold text-ad-text tracking-[0.15em] uppercase mb-6">Navegación</h6>
+          <p class="leading-[1.8]"><a href="proyectos.html" class="hover:text-ad-text">Proyectos</a><br><a href="muebles.html" class="hover:text-ad-text">Muebles</a><br><a href="textiles.html" class="hover:text-ad-text">Textiles</a><br><a href="contacto.html" class="hover:text-ad-text">Contacto</a></p>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-12 mb-24">
+      <div class="lg:hidden">
+        <p class="text-[10px] text-gray-400 mb-1">&copy; 2024 A&D Interiores</p>
+        <p class="text-[10px] text-gray-400">Puerto Vallarta & Guadalajara</p>
+      </div>
+      
+      <div class="flex flex-col text-[11px] text-gray-500 md:ml-auto">
+        <a href="mailto:adinteriores.pv@adinteriores.com.mx" class="mb-2 hover:text-gray-800 transition-colors">adinteriores.pv@adinteriores.com.mx</a>
+        <a href="mailto:adinteriores.gdl@adinteriores.com.mx" class="mb-6 hover:text-gray-800 transition-colors">adinteriores.gdl@adinteriores.com.mx</a>
+        <div class="flex space-x-5 text-gray-400">
+          <a href="#" class="hover:text-ad-text transition-colors"><i class="fab fa-instagram text-base"></i></a>
+          <a href="#" class="hover:text-ad-text transition-colors"><i class="fab fa-facebook-f text-base"></i></a>
+          <a href="#" class="hover:text-ad-text transition-colors"><i class="fab fa-whatsapp text-base"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Big Logo Footer -->
+    <div class="w-full flex justify-center -mb-8">
+      <img src="images/logo.png" alt="A&D Interiores" class="h-28 md:h-40 lg:h-52">
+    </div>
+    
+  </footer>
+
+  <script>
+    // Menu Toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const closeBtn = document.getElementById('close-btn');
+    const fullMenu = document.getElementById('full-menu');
+
+    menuBtn.addEventListener('click', () => {
+      fullMenu.classList.remove('-translate-y-full');
+      document.body.style.overflow = 'hidden';
+    });
+
+    closeBtn.addEventListener('click', closeMenu);
+
+    function closeMenu() {
+      fullMenu.classList.add('-translate-y-full');
+      document.body.style.overflow = '';
+    }
+  </script>
+  
+</body>
+</html>
