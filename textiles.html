@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los Textiles en Nuestros Proyectos - A&D Interiores</title>
+  <meta name="description" content="Textiles de alta calidad para proyectos de diseño de interiores. Representamos las mejores marcas internacionales: Perennials y Kravet.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      background-color: #f6f4f0;
+      color: #3e3d38;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+    .serif { font-family: 'Playfair Display', serif; }
+    .text-ad-text { color: #3e3d38; }
+    .bg-sage { background-color: #7d8271; }
+    .text-sage { color: #7d8271; }
+  </style>
+</head>
+<body class="antialiased selection:bg-gray-200">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-40 px-6 md:px-8 py-4 flex justify-between items-center bg-[#f6f4f0]/90 backdrop-blur-sm">
+    <button id="menu-btn" class="text-ad-text flex flex-col justify-center items-start w-8 h-8 cursor-pointer group hover:opacity-70 transition-opacity">
+      <span class="block w-6 h-px bg-current mb-1.5 transition-all group-hover:w-8"></span>
+      <span class="block w-6 h-px bg-current mb-1.5 transition-all group-hover:w-8"></span>
+      <span class="block w-6 h-px bg-current transition-all group-hover:w-8"></span>
+    </button>
+    
+    <a href="index.html" class="absolute left-1/2 transform -translate-x-1/2 cursor-pointer select-none">
+      <img src="images/logo.png" alt="A&D Interiores" class="h-12 md:h-16">
+    </a>
+    
+    <a href="contacto.html" class="text-ad-text text-[11px] tracking-[0.2em] uppercase font-medium hover:underline">Contacto</a>
+  </header>
+
+  <!-- Menu Overlay -->
+  <div id="full-menu" class="fixed inset-0 bg-sage z-50 transform -translate-y-full transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] flex flex-col overflow-hidden">
+    <header class="relative w-full flex justify-between items-center p-8 text-white flex-shrink-0">
+      <button id="close-btn" class="flex flex-col justify-center items-center w-8 h-8 cursor-pointer hover:opacity-70 transition-opacity">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+      <img src="images/logo.png" alt="A&D Interiores" class="absolute left-1/2 transform -translate-x-1/2 h-20 brightness-0 invert">
+      <a href="contacto.html" class="text-[11px] tracking-[0.2em] uppercase font-medium hover:underline">Contacto</a>
+    </header>
+    
+    <div class="flex-grow flex items-center justify-center w-full px-8">
+      <nav class="flex flex-wrap justify-center gap-8 md:gap-16 text-white text-center">
+        <a href="proyectos.html" class="text-3xl md:text-5xl lg:text-6xl serif hover:opacity-70 transition-opacity whitespace-nowrap">Proyectos</a>
+        <a href="index.html#servicios" class="text-3xl md:text-5xl lg:text-6xl serif hover:opacity-70 transition-opacity whitespace-nowrap">Servicios</a>
+        <a href="index.html#muebles" class="text-3xl md:text-5xl lg:text-6xl serif hover:opacity-70 transition-opacity whitespace-nowrap">Muebles</a>
+        <a href="textiles.html" class="text-3xl md:text-5xl lg:text-6xl serif hover:opacity-70 transition-opacity whitespace-nowrap">Textiles</a>
+        <a href="contacto.html" class="text-3xl md:text-5xl lg:text-6xl serif hover:opacity-70 transition-opacity whitespace-nowrap">Contacto</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="relative w-full h-[70vh] flex items-end">
+    <img src="images/projects/rincon-de-almas/photo_1.jpg" class="absolute inset-0 w-full h-full object-cover" alt="Textiles en diseño de interiores">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+    <div class="relative z-10 max-w-[1200px] mx-auto w-full px-6 pb-16">
+      <p class="text-white/70 text-[10px] tracking-[0.25em] uppercase mb-4">A&D Interiores</p>
+      <h1 class="text-4xl md:text-6xl lg:text-7xl serif text-white leading-[1.1]">Los Textiles en<br>Nuestros Proyectos</h1>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main>
+    
+    <!-- Intro -->
+    <section class="max-w-[1200px] mx-auto px-6 py-32">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
+        <div class="md:col-span-5">
+          <h2 class="text-3xl md:text-[2.5rem] serif text-ad-text leading-[1.2] mb-8">El arte de vestir espacios</h2>
+          <p class="text-gray-500 text-sm leading-relaxed font-light mb-6">
+            Los textiles son el alma de un espacio. Aportan calidez, textura y personalidad a cada rincón. En A&D Interiores seleccionamos cuidadosamente cada tela, tapiz y cortina para complementar nuestros diseños.
+          </p>
+          <p class="text-gray-500 text-sm leading-relaxed font-light">
+            Trabajamos con las mejores marcas internacionales, garantizando durabilidad, belleza y calidad excepcional en cada proyecto.
+          </p>
+        </div>
+        <div class="md:col-span-7 grid grid-cols-2 gap-4">
+          <img src="images/projects/casa-dewi/photo_2.jpg" class="w-full aspect-[3/4] object-cover" alt="Textiles en interiorismo">
+          <img src="images/projects/depto-portofino/photo_2.jpg" class="w-full aspect-[3/4] object-cover mt-12" alt="Telas y tapices">
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios de Textiles -->
+    <section class="bg-white py-32">
+      <div class="max-w-[1200px] mx-auto px-6">
+        <div class="text-center mb-20">
+          <p class="text-[10px] font-medium tracking-[0.25em] text-gray-400 uppercase mb-4">Nuestros Servicios</p>
+          <h2 class="text-3xl md:text-[2.5rem] serif text-ad-text">Soluciones textiles integrales</h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div>
+            <img src="images/projects/casa-sonrisa/photo_2.jpg" class="w-full aspect-square object-cover mb-6" alt="Tapicería">
+            <h3 class="text-xl serif text-ad-text mb-3">Tapicería</h3>
+            <p class="text-gray-500 text-sm leading-relaxed font-light">
+              Telas de alta calidad para muebles, con opciones resistentes para uso intensivo y acabados de lujo para piezas especiales.
+            </p>
+          </div>
+          <div>
+            <img src="images/projects/palmas-19/photo_1.jpg" class="w-full aspect-square object-cover mb-6" alt="Cortinas">
+            <h3 class="text-xl serif text-ad-text mb-3">Cortinas y Persianas</h3>
+            <p class="text-gray-500 text-sm leading-relaxed font-light">
+              Desde cortinas ligeras hasta blackouts, diseñamos soluciones que controlan la luz y complementan la arquitectura del espacio.
+            </p>
+          </div>
+          <div>
+            <img src="images/projects/casa-altillo/photo_2.jpg" class="w-full aspect-square object-cover mb-6" alt="Cojines y accesorios">
+            <h3 class="text-xl serif text-ad-text mb-3">Cojines y Accesorios</h3>
+            <p class="text-gray-500 text-sm leading-relaxed font-light">
+              Detalles que transforman. Cojines, mantas y accesorios textiles que añaden capas de textura y color a cada ambiente.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blancos para Hotelería -->
+    <section class="max-w-[1200px] mx-auto px-6 py-32">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+        <div class="md:col-span-7 order-2 md:order-1">
+          <img src="images/projects/paseo-de-la-noria/photo_1.jpg" class="w-full aspect-[4/3] object-cover" alt="Blancos para hotelería">
+        </div>
+        <div class="md:col-span-5 order-1 md:order-2">
+          <p class="text-[10px] font-medium tracking-[0.25em] text-gray-400 uppercase mb-4">Línea Especializada</p>
+          <h2 class="text-3xl md:text-[2.5rem] serif text-ad-text leading-[1.2] mb-8">Blancos Esenciales<br>para Hotelería</h2>
+          <p class="text-gray-500 text-sm leading-relaxed font-light mb-6">
+            Línea especializada de blancos para proyectos de hospitalidad. Sábanas, toallas, batas y amenidades de la más alta calidad.
+          </p>
+          <p class="text-gray-500 text-sm leading-relaxed font-light mb-10">
+            Trabajamos con hoteles boutique y desarrollos de lujo, ofreciendo productos que combinan confort excepcional con durabilidad profesional.
+          </p>
+          <a href="contacto.html" class="text-[10px] font-medium tracking-[0.2em] text-sage uppercase hover:underline">Solicitar catálogo →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marcas -->
+    <section class="bg-sage text-white py-32">
+      <div class="max-w-[1200px] mx-auto px-6">
+        <div class="text-center mb-16">
+          <p class="text-[10px] font-medium tracking-[0.25em] text-white/60 uppercase mb-4">Alianzas Estratégicas</p>
+          <h2 class="text-3xl md:text-[2.5rem] serif">Marcas que Representamos</h2>
+          <p class="text-white/70 text-sm font-light max-w-2xl mx-auto mt-6">
+            Somos representantes autorizados de las marcas más prestigiosas en textiles de diseño. Calidad, innovación y estilo para cada proyecto.
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-4xl mx-auto">
+          <!-- Perennials -->
+          <a href="https://www.perennialsfabrics.com/" target="_blank" class="group text-center">
+            <div class="bg-white/10 p-12 mb-6 group-hover:bg-white/20 transition-colors">
+              <img src="images/marcas/perennials.jpg" alt="Perennials" class="h-16 md:h-20 mx-auto object-contain brightness-0 invert">
+            </div>
+            <h3 class="text-xl serif mb-2">Perennials</h3>
+            <p class="text-white/60 text-sm font-light">Telas de rendimiento de lujo y tapetes diseñados para durar. Resistentes al sol, manchas y uso intensivo sin sacrificar elegancia.</p>
+          </a>
+          
+          <!-- Kravet -->
+          <a href="https://www.kravet.com/" target="_blank" class="group text-center">
+            <div class="bg-white/10 p-12 mb-6 group-hover:bg-white/20 transition-colors">
+              <img src="images/marcas/kravet.jpg" alt="Kravet" class="h-16 md:h-20 mx-auto object-contain brightness-0 invert">
+            </div>
+            <h3 class="text-xl serif mb-2">Kravet</h3>
+            <p class="text-white/60 text-sm font-light">Más de 100 años de excelencia en textiles. Colecciones exclusivas de telas, tapices y accesorios para los proyectos más exigentes.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="max-w-[1200px] mx-auto px-6 py-32 text-center">
+      <h2 class="text-3xl md:text-[2.5rem] serif text-ad-text mb-6">¿Tienes un proyecto en mente?</h2>
+      <p class="text-gray-500 text-sm font-light max-w-xl mx-auto mb-10">
+        Agenda una visita a nuestro showroom para conocer nuestra colección de textiles y recibir asesoría personalizada.
+      </p>
+      <a href="https://wa.me/523222903207" target="_blank" class="inline-flex items-center justify-center gap-3 bg-sage text-white px-10 py-4 text-[11px] font-medium tracking-[0.2em] uppercase hover:bg-[#6b7162] transition-colors">
+        Agendar Visita
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+      </a>
+    </section>
+    
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white pt-24 pb-12 px-6">
+    <div class="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 mb-24">
+      
+      <div class="lg:col-span-4 flex flex-col justify-between">
+        <h3 class="text-3xl md:text-[2.5rem] leading-[1.1] serif text-ad-text mb-12 lg:mb-0 pr-8">Textiles que transforman espacios.</h3>
+        <div class="hidden lg:block">
+          <p class="text-[10px] text-gray-400 mb-1">&copy; 2024 A&D Interiores</p>
+          <p class="text-[10px] text-gray-400">Puerto Vallarta & Guadalajara</p>
+        </div>
+      </div>
+      
+      <div class="lg:col-span-8 grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-4 text-[11px] text-gray-500">
+        <div>
+          <h6 class="font-semibold text-ad-text tracking-[0.15em] uppercase mb-6">Puerto Vallarta</h6>
+          <p class="leading-[1.8]">Plaza Canalan<br>Tel. (322) 290 3207<br>Tel. (322) 223 6209</p>
+        </div>
+        <div>
+          <h6 class="font-semibold text-ad-text tracking-[0.15em] uppercase mb-6">Guadalajara</h6>
+          <p class="leading-[1.8]">Tel. (33) 3615 2777<br>Tel. (33) 3615 2663</p>
+        </div>
+        <div>
+          <h6 class="font-semibold text-ad-text tracking-[0.15em] uppercase mb-6">Navegación</h6>
+          <p class="leading-[1.8]"><a href="proyectos.html" class="hover:text-ad-text">Proyectos</a><br><a href="index.html#muebles" class="hover:text-ad-text">Muebles</a><br><a href="textiles.html" class="hover:text-ad-text">Textiles</a><br><a href="contacto.html" class="hover:text-ad-text">Contacto</a></p>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-12 mb-24">
+      <div class="lg:hidden">
+        <p class="text-[10px] text-gray-400 mb-1">&copy; 2024 A&D Interiores</p>
+        <p class="text-[10px] text-gray-400">Puerto Vallarta & Guadalajara</p>
+      </div>
+      
+      <div class="flex flex-col text-[11px] text-gray-500 md:ml-auto">
+        <a href="mailto:adinteriores.pv@adinteriores.com.mx" class="mb-2 hover:text-gray-800 transition-colors">adinteriores.pv@adinteriores.com.mx</a>
+        <a href="mailto:adinteriores.gdl@adinteriores.com.mx" class="mb-6 hover:text-gray-800 transition-colors">adinteriores.gdl@adinteriores.com.mx</a>
+        <div class="flex space-x-5 text-gray-400">
+          <a href="#" class="hover:text-ad-text transition-colors"><i class="fab fa-instagram text-base"></i></a>
+          <a href="#" class="hover:text-ad-text transition-colors"><i class="fab fa-facebook-f text-base"></i></a>
+          <a href="#" class="hover:text-ad-text transition-colors"><i class="fab fa-whatsapp text-base"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Big Logo Footer -->
+    <div class="w-full flex justify-center -mb-8">
+      <img src="images/logo.png" alt="A&D Interiores" class="h-28 md:h-40 lg:h-52">
+    </div>
+    
+  </footer>
+
+  <script>
+    // Menu Toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const closeBtn = document.getElementById('close-btn');
+    const fullMenu = document.getElementById('full-menu');
+
+    menuBtn.addEventListener('click', () => {
+      fullMenu.classList.remove('-translate-y-full');
+      document.body.style.overflow = 'hidden';
+    });
+
+    closeBtn.addEventListener('click', closeMenu);
+
+    function closeMenu() {
+      fullMenu.classList.add('-translate-y-full');
+      document.body.style.overflow = '';
+    }
+  </script>
+  
+</body>
+</html>
